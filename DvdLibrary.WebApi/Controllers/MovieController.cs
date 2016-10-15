@@ -1,4 +1,5 @@
-﻿using DvdLibrary.WebApi.Models;
+﻿using DvdLibrary.Data;
+using DvdLibrary.WebApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,25 +7,45 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Data.Entity;
 //using System.Data.Entity;
 //using Dashboard.Data.Entities;
 
 namespace Dashboard.WebApi.Controllers
 {
-    public class EventController : ApiController, IDisposable
+    [RoutePrefix("api/Movie")]
+    public class MovieController : ApiController, IDisposable
     {
-        //private DashboardContext _dbContext;
+        private DvdLibraryEntityModel _dbContext;
 
-        //public EventController()
-        //{
-        //    _dbContext = new DashboardContext();
-        //    CreateMaps();
-        //}
+        public MovieController()
+        {
+            _dbContext = new DvdLibraryEntityModel();
+            CreateMaps();
+        }
 
         [HttpGet]
-        public async Task<IHttpActionResult> GetAsync()
+        [Route("AvailableMovies", Name = "AvailableMovies")]
+        public async Task<IHttpActionResult> GetAvailableMovies(string q = null)
         {
-            return Ok(new List<int> { 1, 2, 3, 4 });
+            ICollection<Movie> movies = null;
+            if (!string.IsNullOrEmpty(q))
+            {
+                movies = await _dbContext.Movies.Where(m => m.Name.Contains(q)).Include(m => m.MovieCopies).ToListAsync();
+            }
+            else
+            {
+                movies = await _dbContext.Movies.Include(m => m.MovieCopies).ToListAsync();
+            }
+
+            return Ok(AutoMapper.Mapper.Map<List<MovieModel>>(movies));
+        }
+
+
+        private void CreateMaps()
+        {
+            AutoMapper.Mapper.CreateMap<DvdLibrary.Data.Movie, MovieModel>()
+                .ForMember(m => m.AvailableCount, e => e.MapFrom(src => src.MovieCopies.Count)).ReverseMap();
         }
 
         //[HttpGet]

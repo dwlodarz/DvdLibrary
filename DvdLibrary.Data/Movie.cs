@@ -5,10 +5,12 @@ namespace DvdLibrary.Data
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using System.Runtime.Serialization;
 
-    public partial class Movy
+    [KnownType(typeof(Movie))]
+    public partial class Movie
     {
-        public Movy()
+        public Movie()
         {
             MovieCopies = new HashSet<MovieCopy>();
         }

@@ -14,7 +14,7 @@ namespace DvdLibrary.Data
 
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<MovieCopy> MovieCopies { get; set; }
-        public virtual DbSet<Movy> Movies { get; set; }
+        public virtual DbSet<Movie> Movies { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -29,9 +29,9 @@ namespace DvdLibrary.Data
                 .WithRequired(e => e.MovieCopy)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Movy>()
+            modelBuilder.Entity<Movie>()
                 .HasMany(e => e.MovieCopies)
-                .WithRequired(e => e.Movy)
+                .WithRequired(e => e.Movie)
                 .HasForeignKey(e => e.MovieId)
                 .WillCascadeOnDelete(false);
         }

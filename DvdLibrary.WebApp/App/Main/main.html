@@ -1,3 +1,20 @@
-﻿<div class="row calendarNav">
-   aa
+﻿<div class="row">
+    <div class="col-lg-5">
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button" ng-click="search()">Go!</button>
+            </span>
+            <input type="text" class="form-control" placeholder="Search for..." ng-model="query">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-5">
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="movie in movies" ng-class="{ 'disabled': movie.AvailableCount == 0}">
+                <span class="tag tag-default tag-pill pull-xs-right">{{movie.AvailableCount}}</span>
+                {{movie.Name}}
+            </li>
+        </ul>
+    </div>
 </div>

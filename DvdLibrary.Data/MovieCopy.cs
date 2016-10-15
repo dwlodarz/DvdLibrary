@@ -22,6 +22,6 @@ namespace DvdLibrary.Data
 
         public virtual ICollection<Order> Orders { get; set; }
 
-        public virtual Movy Movy { get; set; }
+        public virtual Movie Movie { get; set; }
     }
 }

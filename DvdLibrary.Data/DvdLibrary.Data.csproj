@@ -51,7 +51,7 @@
     <Compile Include="Client.cs" />
     <Compile Include="DvdLibraryEntityModel.cs" />
     <Compile Include="MovieCopy.cs" />
-    <Compile Include="Movy.cs" />
+    <Compile Include="Movie.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
