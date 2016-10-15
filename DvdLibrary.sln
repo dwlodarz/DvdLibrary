@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DvdLibrary.WebApp", "DvdLibrary.WebApp\DvdLibrary.WebApp.csproj", "{38DD8365-DBA8-4D9D-A0FF-6224FA717B6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DvdLibrary.WebApi", "DvdLibrary.WebApi\DvdLibrary.WebApi.csproj", "{BD49F386-5852-4D0F-9DB5-11BA85E36144}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DvdLibrary.Data", "DvdLibrary.Data\DvdLibrary.Data.csproj", "{557D60E7-980D-4ED4-960F-8DB2072DA881}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38DD8365-DBA8-4D9D-A0FF-6224FA717B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38DD8365-DBA8-4D9D-A0FF-6224FA717B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38DD8365-DBA8-4D9D-A0FF-6224FA717B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38DD8365-DBA8-4D9D-A0FF-6224FA717B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD49F386-5852-4D0F-9DB5-11BA85E36144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD49F386-5852-4D0F-9DB5-11BA85E36144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD49F386-5852-4D0F-9DB5-11BA85E36144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD49F386-5852-4D0F-9DB5-11BA85E36144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{557D60E7-980D-4ED4-960F-8DB2072DA881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{557D60E7-980D-4ED4-960F-8DB2072DA881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{557D60E7-980D-4ED4-960F-8DB2072DA881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{557D60E7-980D-4ED4-960F-8DB2072DA881}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

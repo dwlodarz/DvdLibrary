@@ -1,0 +1,7 @@
+packages/
+DvdLibrary.WebApi/obj/
+DvdLibrary.WebApp/obj/
+DvdLibrary.WebApp/bin/
+DvdLibrary.WebApi/bin/
+DvdLibrary.Data/bin/
+DvdLibrary.Data/obj/
