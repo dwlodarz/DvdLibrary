@@ -87,7 +87,6 @@
     <Content Include="App\app.js" />
     <Content Include="App\Main\main.html" />
     <Content Include="App\Main\main.js" />
-    <Content Include="App\Services\eventService.js" />
     <Content Include="Assets\Css\angular-bootstrap-calendar.min.css" />
     <Content Include="Assets\Css\app.css" />
     <Content Include="Assets\Css\autocomplete.css" />
