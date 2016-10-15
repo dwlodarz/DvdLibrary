@@ -10,13 +10,15 @@ using System.Web.Http;
 namespace DvdLibrary.WebApi
 {
     [assembly: OwinStartup(typeof(Startup))]
-    public class Startup
+    public partial class Startup
     {
         public void Configuration(IAppBuilder appBuilder)
         {
+            ConfigureAuth(appBuilder);
             HttpConfiguration httpConfiguration = new HttpConfiguration();
             WebApiConfig.Register(httpConfiguration);
             appBuilder.UseWebApi(httpConfiguration);
+
         }
     }
 }
