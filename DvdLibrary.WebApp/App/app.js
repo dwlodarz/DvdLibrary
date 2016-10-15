@@ -9,12 +9,6 @@ myApp.config(['$routeProvider', function ($routeProvider) {
     	    templateUrl: 'app/main/main.html',
     	    controller: 'MainController'
     	});
-    $routeProvider.when(
-    	'/view2',
-    	{
-    	    templateUrl: 'partials/partial2.html',
-    	    controller: 'MyCtrl2'
-    	});
     $routeProvider.otherwise(
         {
             redirectTo: '/view1'

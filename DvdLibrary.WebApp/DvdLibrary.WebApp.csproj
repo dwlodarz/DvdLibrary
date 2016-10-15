@@ -76,6 +76,7 @@
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\version.json" />
+    <None Include="Properties\PublishProfiles\dvdlibrarywebapp - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

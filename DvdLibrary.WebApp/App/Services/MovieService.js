@@ -2,7 +2,7 @@
     'use strict';
     angular.module('app.services', [])
         .service("movieService", ['$q', '$http', function ($q, $http) {
-            var apiUri = 'http://localhost/DvdLibrary.WebApi/api/movie/';
+            var apiUri = 'http://dvdlibrary.azurewebsites.net/api/movie/';
 
             function getMovies(query) {
                 var getMoviesRequest = $http({
