@@ -1,5 +1,5 @@
 ﻿using DvdLibrary.WebApi.Controllers;
-using DvdLibrary.Data.Entities;
+//using DvdLibrary.Data.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -14,7 +14,7 @@ namespace DvdLibrary.WebApi
     {
         protected void Application_Start()
         {
-            Database.SetInitializer(new DvdLibraryDbInitialization());
+            //Database.SetInitializer(new DvdLibraryDbInitialization());
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }
