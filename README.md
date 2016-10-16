@@ -68,8 +68,8 @@ The current implementation is a poor man's solution to the problem due to the ti
 4. Add a business logic level: 1MD
 5. Change css it less + gulp task for compilation: 1MD
 6. Add FrontEnd functionalities like: add order, delete order, see what have I a rented: 3MD
-> *Nice to have* 7. introduce TypeScript instead of plain JS: 1MD
-> *Nice to have* 8. introduce lazy javascript load - on demand.
+> *Nice to have* 7. introduce TypeScript instead of plain JS: 1MD<br />
+> *Nice to have* 8. introduce lazy javascript load - on demand.<br />
 
 ### C
 I've implemented a single page application. The FrontEnd functionalities that are made available to the user had to be cut due to the time restrictions. I tried to deliver
@@ -95,7 +95,7 @@ The technology stack consists of the following:
 - Bootstrap - components + responsive UI + navigation
 
 Everything is hosted under App service in azure:
-> **FrontEnd application** {[ttp://dvdlibrarywebapp.azurewebsites.net/](http://dvdlibrarywebapp.azurewebsites.net/)
+> **FrontEnd application** [http://dvdlibrarywebapp.azurewebsites.net/](http://dvdlibrarywebapp.azurewebsites.net/)<br />
 > **WebAPI** [http://dvdlibrary.azurewebsites.net/api/](http://dvdlibrary.azurewebsites.net/api/movie/AvailableMovies)
 
 Having this setup I'm able to bind the continuous integration that I have configured [![Build status](https://ci.appveyor.com/api/projects/status/x7pr6aw8un4558i1?svg=true)](https://ci.appveyor.com/project/dwlodarz/dvdlibrary)
@@ -106,5 +106,5 @@ makes things easier in terms of licensing and I don' have to have a full MSSQL D
 
 **REST** endpoints are easily scalable due to its statelessness what might be crucial to systems with high constant load or during peak hours.
 
-FronEnd application basing on *AngularJS* gives as a good vendor support in foreseeable future. One could ask why not Angular 2.x, however since it was just released I'm worried that
+FronEnd application basing on **AngularJS** gives as a good vendor support in foreseeable future. One could ask why not Angular 2.x, however since it was just released I'm worried that
 it would pose some adolescence problems and my exposure to this technology is not big enough to feel comfortable in such a quick project.
