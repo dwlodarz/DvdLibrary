@@ -62,12 +62,12 @@ One can also consider reading the files in parallel what shout increase the gene
 
 ### A
 The current implementation is a poor man's solution to the problem due to the time constraints given. It'd have to be further expanded with following features and refactorings:
-1. Finish implementing the Facebook JWT authentication (BackEnd + FrontEnd) : 2MD
-2. Add DI in order to separate the layers: 5MH
-3. Introduce UnitTests for basic functionalities: 2MD
-4. Add a business logic level: 1MD
-5. Change css it less + gulp task for compilation: 1MD
-6. Add FrontEnd functionalities like: add order, delete order, see what have I a rented: 3MD
+1. Finish implementing the Facebook JWT authentication (BackEnd + FrontEnd) : 2MD<br />
+2. Add DI in order to separate the layers: 5MH<br />
+3. Introduce UnitTests for basic functionalities: 2MD<br />
+4. Add a business logic level: 1MD<br />
+5. Change css it less + gulp task for compilation: 1MD<br />
+6. Add FrontEnd functionalities like: add order, delete order, see what have I a rented: 3MD<br />
 > *Nice to have* 7. introduce TypeScript instead of plain JS: 1MD<br />
 > *Nice to have* 8. introduce lazy javascript load - on demand.<br />
 
