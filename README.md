@@ -61,7 +61,7 @@ One can also consider reading the files in parallel what shout increase the gene
 ## 2. Build a web interface that Oscar will use to manage his DVD rental store.
 
 ### A
-The current implementation is a poor man's solution to the problem due to the time constraints given. It'd have to be further expanded with following features and refactorings:
+The current implementation is a poor man's solution to the problem due to the time constraints given. It'd have to be further expanded with following features and refactorings:<br />
 1. Finish implementing the Facebook JWT authentication (BackEnd + FrontEnd) : 2MD<br />
 2. Add DI in order to separate the layers: 5MH<br />
 3. Introduce UnitTests for basic functionalities: 2MD<br />
