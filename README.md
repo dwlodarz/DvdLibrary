@@ -12,6 +12,10 @@ The design consists of 4 tables:
 3. CopiesOfMovie -> Table that stores the current stock status.
 4. Order -> Joins the client with the movie to become an order
 
+<p align="center">
+  <img src="/dbstructure.jpeg" width="550"/>
+</p>
+
 ### B
 The main problem of this task is the runtime memory allocation. Having that many files in a single folder makes it impossible to load it all and then merge. 
 Even if I'd pick a single name and then search for it, it doesn't make me certain that the app wouldn't crash.
