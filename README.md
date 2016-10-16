@@ -100,3 +100,11 @@ Everything is hosted under App service in azure:
 
 Having this setup I'm able to bind the continuous integration that I have configured [![Build status](https://ci.appveyor.com/api/projects/status/x7pr6aw8un4558i1?svg=true)](https://ci.appveyor.com/project/dwlodarz/dvdlibrary)
 with the deployment and also if the load increases to auto-scale.
+
+The reason to choose **Azure Database** was two-fold. The way the data for dvd library is highly relational which requires this kind of DB, on the other hand the cloud solution 
+makes things easier in terms of licensing and I don' have to have a full MSSQL DB instance installed on my local machine.
+
+**REST** endpoints are easily scalable due to its statelessness what might be crucial to systems with high constant load or during peak hours.
+
+FronEnd application basing on *AngularJS* gives as a good vendor support in foreseeable future. One could ask why not Angular 2.x, however since it was just released I'm worried that
+it would pose some adolescence problems and my exposure to this technology is not big enough to feel comfortable in such a quick project.
