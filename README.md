@@ -44,13 +44,14 @@ a single entry for a given word and corresponding appearance count.
 Every following call to a method would just query the database for a corresponding value. So only the first call would be computationally heavy or rather I/O heavy. 
 One can also consider reading the files in parallel what shout increase the general throughput:
 
- `AllLines = new string[MAX]; //only allocate memory here`
- `AllLines = File.ReadAllLines(fileName);`
- `Parallel.For(0, AllLines.Length, x =>`
- `{`
-     `TestReadingAndProcessingLinesFromFile_DoStuff(AllLines[x]);`
- `});`
-
+```
+ AllLines = new string[MAX]; //only allocate memory here
+ AllLines = File.ReadAllLines(fileName);
+ Parallel.For(0, AllLines.Length, x =>
+ {
+     TestReadingAndProcessingLinesFromFile_DoStuff(AllLines[x]);
+ });
+```
 > *Time estimation*
 > Assuming that we work on a average machine with no SSD drive, some benchmark indicate that with parallel processing 10k word file would be processed within 4-7 minutes. Processing
 > time of 400k in unacceptable, therefore one has to consider either scaling up or out. The cheapest is to take advantage of existing cloud vendors and not only do parallel processing
